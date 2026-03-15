@@ -1,0 +1,9 @@
+name: Test Github Runner
+on: [workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests on Github Runner"
+      - run: echo "Tests completed successfully"
+      - run: date
