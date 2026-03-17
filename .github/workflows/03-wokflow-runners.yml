@@ -17,9 +17,10 @@ jobs:
           echo "This job is running on Windows runner."
           echo ${{ runner.os }}
 
-#   macOS-echo: 
-#     runs-on: macos-latest
-#     steps:
-#       - name: Show OS
-#         run: echo "This job is running on macOS runner |
-#          ${{ runner.os }}"
+  macOS-echo: 
+    runs-on: macos-latest
+    steps:
+      - name: Show OS
+        run: | 
+          echo "This job is running on macOS runner"
+          echo ${{ runner.os }}
