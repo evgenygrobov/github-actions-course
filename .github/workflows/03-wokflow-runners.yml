@@ -13,8 +13,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Show OS
-        run: echo "This job is running on Windows runner |
-         ${{ runner.os }}
+        run: | 
+          echo "This job is running on Windows runner."
+          echo ${{ runner.os }}
 
 #   macOS-echo: 
 #     runs-on: macos-latest
